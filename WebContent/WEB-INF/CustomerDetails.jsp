@@ -4,19 +4,43 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Enter details</title>
 </head>
 <body>
 	<h1>Enter Information about Customer</h1>
 	<h3>${msg}</h3>
 	<form action="/FirstSpringMVC/displayInfo.html" method="post">
-		<p>
-			Customer's Name:<input type="text" name="customerName"/>
-		</p>
-		<p>
-			Customer's EmailId:<input type="text" name="customerEmailId"/>
-		</p>
-		<input type="submit" value="Press here to submit form"/>
+		<table>
+			<tr>
+				<td>Customer's Name:</td>
+				<td><input type="text" name="customerName" /></td>
+			</tr>
+			<tr>
+				<td>Customer's EmailId:</td>
+				<td><input type="text" name="customerEmailId" /></td>
+			</tr>
+			<tr>
+				<td>Customer's Mobile Number:</td>
+				<td><input type="text" name="mobileNo" /></td>
+			</tr>
+			<tr>
+				<td>Customer's Date of Birth:</td>
+				<td><input type="text" name="customerDOB" /></td>
+			</tr>
+			<tr>
+				<td>Available Items for Customer:</td>
+				<td><select name="itemsToBeSelect" multiple>
+						<option value="Pen">Pen</option>
+						<option value="Pencil">Pencil</option>
+						<option value="Ruler">Ruler</option>
+						<option value="Eraser">Eraser</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Press here to submit form" /></td>
+			</tr>
+
+		</table>
 	</form>
 </body>
 </html>

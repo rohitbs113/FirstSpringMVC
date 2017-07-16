@@ -19,6 +19,18 @@
 			<td>Customer's EmailId:</td>
 			<td>${customer1.customerName}</td> 
 		</tr>
+		<tr>
+			<td>Customer's Mobile Number:</td>
+			<td>${customer1.mobileNo}</td> 
+		</tr>
+		<tr>
+			<td>Customer's Date of Birth:</td>
+			<td>${customer1.customerDOB}</td> 
+		</tr>
+		<tr>
+			<td>Items selected by customer:</td>
+			<td>${customer1.itemsToBeSelect}</td> 
+		</tr>
 	</table>
 </body>
 </html>
